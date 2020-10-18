@@ -6,6 +6,16 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180819428-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180819428-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crowley Software</title>
@@ -276,12 +286,15 @@
                     email: email,
                     msg: msg
                 },
-                headers: { 'Content-Type' : 'application/json' }
+                headers: { 'Content-Type': 'application/json' }
             };
 
             axios(xhrConfig)
                 .then(function (response) {
                     document.querySelector("#confirmation").classList = "modal is-active";
+                    document.querySelector("#contact_name").value = null;
+                    document.querySelector("#contact_email").value = null;
+                    document.querySelector("#contact_msg").value = null;
                 })
                 .catch(function (error) {
                     console.log(error);
