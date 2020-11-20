@@ -5,15 +5,26 @@
 .navpad{
     padding-right: 20px;
 }
-
+.pushdown {
+    padding-top: 50px;
+}
 .section-pad{
     padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pad-left {
     padding-left: 15px;
 }
 
+.pad-top {
+    padding-top: 15px;
+}
+
+.pad-bottom {
+    padding-bottom: 15px;
+}
 .headline {
     color: blue;
 }
