@@ -28,3 +28,32 @@
 .headline {
     color: blue;
 }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background-image: url('../image/headshot_mobile.png');
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .profile {
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        background-image: url('../image/headshot_tablet.png');
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
