@@ -40,6 +40,10 @@
         margin: auto;
         background-image: url('../image/headshot_mobile.png');
     }
+
+    .pushdown {
+        padding-top: 120px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -50,6 +54,10 @@
         height: 350px;
         margin: auto;
         background-image: url('../image/headshot_tablet.png');
+    }
+
+    .pushdown {
+        padding-top: 50px;
     }
 }
 
